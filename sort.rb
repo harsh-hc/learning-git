@@ -1,23 +1,19 @@
+class Test
 
-
-arr = [2,5,3,9,7,4,1]
-
-def sort(arr)
-
-    for i in (0 ..arr.size-1)
-        mini = i
-        for j in ((i+1) ..(arr.size-1))
-            if arr[mini] > arr[j]
-                mini = j 
+def sort
+    arr=[5,8,2,9,1,7]
+for i in (0..arr.length-1)
+        for j in (0..arr.length-1)
+            if(arr[i]<arr[j])
+                arr[j],arr[i]=arr[i],arr[j]
             end
         end
-        temp = arr[i]
-        arr[i] = arr[mini]
-        arr[mini] = temp
-    end
+        arr
+        
 
+    end
+    arr
+end
 end
 
-sort(arr)
-print arr  
-
+print Test.new.sort
